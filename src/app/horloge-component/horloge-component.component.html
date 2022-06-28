@@ -1,6 +1,15 @@
 <div class="container">
-  <p>
-    {{ cityData.city }} : {{ date }} de la timezone :
-    {{ cityData.timezone }}
-  </p>
+  <div class="city">
+    <h3>
+      {{ cityData.city }}
+    </h3>
+  </div>
+  <div>
+    <p class="time">
+      {{ date }}
+    </p>
+    <p>
+      {{ cityData.timezone }}
+    </p>
+  </div>
 </div>
