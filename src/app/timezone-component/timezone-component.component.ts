@@ -18,9 +18,10 @@ export class TimezoneComponentComponent implements OnInit {
 
   setHour(timezone: string): string {
     let date = new Date().toLocaleString('fr-FR', { timeZone: timezone });
+    const time = date.split(' ')[1];
     // setTimeout(() => {
     //   date = new Date().toLocaleString('fr-FR', { timeZone: timezone });
     // }, 1000);
-    return date;
+    return time;
   }
 }
