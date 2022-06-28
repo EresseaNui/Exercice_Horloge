@@ -17,7 +17,10 @@ export class TimezoneComponentComponent implements OnInit {
   ngOnInit(): void {}
 
   setHour(timezone: string): string {
-    const date = new Date().toLocaleString('fr-FR', { timeZone: timezone });
+    let date = new Date().toLocaleString('fr-FR', { timeZone: timezone });
+    // setTimeout(() => {
+    //   date = new Date().toLocaleString('fr-FR', { timeZone: timezone });
+    // }, 1000);
     return date;
   }
 }
