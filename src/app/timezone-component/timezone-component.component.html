@@ -1,0 +1,6 @@
+<div *ngFor="let cityTimeZone of cityTimeZones">
+  <app-horloge-component
+    [date]="setHour(cityTimeZone.timezone)"
+    [cityData]="cityTimeZone"
+  ></app-horloge-component>
+</div>
